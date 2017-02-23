@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const Card = () => {
-  const message = 'this is a card';
+const Card = (props) => {
   return (
-    <div className="card">{message}</div>
+    <div className="card">{props.text}</div>
   );
 };
 

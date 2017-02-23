@@ -1,12 +1,13 @@
 import React from 'react';
 import Card from './card';
 
-const CardList = () => {
+const CardList = (props) => {
   return (
     <div className="card-list">
-      <Card />
-      <Card />
-      <Card />
+      {props.title}
+      <Card text="do laundry"/>
+      <Card text="eat"/>
+      <Card text="sleep"/>
     </div>
   );
 };

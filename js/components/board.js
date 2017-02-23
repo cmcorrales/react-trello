@@ -2,12 +2,11 @@ import React from 'react';
 
 import CardList from './list'
 
-const Board = () => {
+const Board = (props) => {
   return (
     <div className="board">
-      <CardList />
-      <CardList />
-      <CardList />
+      <div>{props.title}</div>
+      <CardList title="to do"/>
     </div>
   );
 }
